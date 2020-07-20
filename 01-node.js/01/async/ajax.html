@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- <script>
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4) {
+                    console.log(xmlhttp.response)
+                }
+            }
+
+            xmlhttp.open("GET", "http://api.kele8.cn/", true);
+            xmlhttp.send()
+
+            // console.log(xmlhttp.response);
+            // setTimeout(() => {
+            //     console.log(xmlhttp.response)
+            // }, 1000);
+        </script> -->
+
+        <script>
+            //  
+            console.log('代码开始');
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", "http://api.kele8.cn/", false);
+            xmlhttp.send()
+
+            console.log('请求发送完成', xmlhttp.readyState);
+
+            console.log(xmlhttp.response);
+
+        </script>
+    </body>
+</html>
